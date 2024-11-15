@@ -44,7 +44,7 @@ plt.show()
 ### Input image and grayscale image
 ```
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-plt.subplot(2, 2, 2)
+
 plt.imshow(gray_image, cmap='gray')
 plt.title('Grayscale Image')
 plt.axis('off')
@@ -57,7 +57,7 @@ plt.axis('off')
 ### Canny Edge detector output
 ```
 edges = cv2.Canny(gray_image, 50, 150, apertureSize=3)
-plt.subplot(2, 2, 3)
+
 plt.imshow(edges, cmap='gray')
 plt.title('Canny Edge Detector Output')
 plt.axis('off')
